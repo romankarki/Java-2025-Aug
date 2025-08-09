@@ -5,10 +5,10 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copy the source code into the container
-COPY app/Selection.java /app/
+COPY . /app/
 
 # Compile the Java code
-RUN javac Selection.java
+RUN javac selections/Selection.java app/app.java
 
 # Define the command to run the application when the container starts
-CMD ["java", "Selection"]
+CMD ["java", "app.app"]

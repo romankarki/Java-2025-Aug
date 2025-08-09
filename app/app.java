@@ -1,5 +1,9 @@
+package app;
+import selections.Selection;
 public class app {
     public static void main (String[] args){
-        System.out.println("Hello World!");
+        Selection s = new Selection();
+        s.saySelection();
+
     }
 }
