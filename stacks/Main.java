@@ -10,6 +10,5 @@ public class Main{
         s.printStack();
 
         s.pop();
-      
     }
 }
